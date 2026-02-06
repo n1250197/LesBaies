@@ -1,0 +1,239 @@
+@charset "utf-8";
+
+/*共通*/
+html {
+    font-size: 100%;
+}
+body {
+    line-height: 1.7;
+    color: #F4F1ED;
+    font-family: "Charm", cursive;
+    background-color: #F4F1ED;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+
+/*レイアウト*/
+.align-center {
+    text-align: center;
+}
+.wrapper {
+    max-width: 1180px;
+    margin: auto;
+    padding: 0 1.5rem;
+    
+}
+
+/*ヘッダー*/
+.box{
+    background-color: #7A1F2B;
+}
+.page-header {
+    padding-top: 0.5rem;
+    background-color: #7A1F2B;
+   
+}
+.logo {
+    width: 210px;
+}
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    font-size: 1.55rem;
+    list-style: none;
+}
+.main-nav a {
+    color: #C7A15A;
+}
+.main-nav a:hover {
+    color: #0bd;
+    
+}
+
+/*見出し*/
+.font-english {
+    font-weight: normal;
+}
+.page-title,
+.heading-large {
+    font-size: 3rem;
+    text-align: center;
+}
+.page-title {
+     margin-top: 2rem;
+    line-height: 1.4;
+}
+.heading-large {
+    margin-bottom: 1rem;
+}
+.cover {
+    background-size: cover;
+    background-position: center bottom;
+    height: 800px;
+}
+.cover-home {
+    background-image: url(../images/cover-home-s.png);
+}
+
+
+/*コンテンツ*/
+.about, .about-menu{
+    max-width: 736px;
+    padding: 0 1.5rem;
+    margin: 3rem auto 4rem;
+    color: #1C1C1C;
+}
+.about p {
+    margin-bottom: 3rem;
+}
+
+/*ボタン*/
+.btn {
+    display: inline-block;
+    font-size: 1.5rem;
+    background-color: #C7A15A;
+    color: #F4F1ED;
+    border-bottom: 5px solid #1C1C1C;
+    border-radius: 32px;/*ボタンの角を丸めるプロパティ*/
+    padding: .75rem 1.5rem;
+}
+.btn:hover {
+   margin-top: 3px;
+  color: #F4F1ED;
+  background: #C7A15A;
+  border-bottom: 2px solid #1C1C1C;
+}
+
+
+/*フッター*/
+.page-footer {
+    background-image: url(../images/footer-s.png);
+    background-size: cover;
+    background-position: center;
+    padding-top: 12rem;
+}
+.info {
+    width: 100%;
+    max-width: 544px;
+    margin: auto;
+    padding: 0 1.5rem;
+    border-spacing: 0;
+}
+.info th,
+.info td {
+    border-bottom: 1px solid #F4F1ED;
+}
+.info th {
+    text-align: left;
+    font-weight: normal;
+    padding: 1rem;
+}
+.info td {
+    padding: 1rem 0;
+}
+.copyright {
+    background-color: #1C1C1C;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 6rem;
+    
+}
+
+/*お問い合わせ*/
+#text,#mail,textarea{
+    background-color: #F4F1ED;
+    border: 1.5px solid #1C1C1C;
+}
+textarea{
+    width: 500px;
+}
+#submit{
+    border: #C7A15A;
+    background-color: #7A1F2B;
+    border-radius: 8px;
+    color: #F4F1ED;
+    padding: 0.2rem 0.5rem;
+}
+
+.content{
+    margin-top: 2rem;
+    color: #1C1C1C;
+    gap: 2.5rem;
+}
+.content ul {
+    margin-bottom: 2rem;
+}
+
+/*お知らせ*/
+#news ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+#news ul li{
+    padding: 20px 0 20px 175px;
+    border-bottom: 2px dotted #C7A15A;
+    color: #1C1C1C;
+    text-indent: -175px;
+}
+time{
+    margin-right: 5rem;
+}
+
+/*メニュー*/
+.menu{
+   flex-wrap: wrap;
+   display: flex;
+   gap: 10px;
+   margin-bottom: 2rem;
+   justify-content: center;
+}
+.menu img {
+    border-radius: 10px;
+}
+.menu p {
+    font-weight: bold;
+}
+.menu div {
+    width: 45%;
+}
+
+
+/*デスクトップ用*/
+@media(min-width:800px){
+    /*見出し*/
+    .page-title {
+        font-size: 5rem;
+    }
+    .heading-large {
+        font-size: 4rem;
+    }
+    /*ヘッダー*/
+    .page-header {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1rem;
+    }
+    .main-nav {
+        font-size: 2rem;
+    }
+    /*HOME*/
+    .cover-home {
+        background-image: url(../images/cover-home-l.png);
+    }
+    .about {
+        margin: 4rem auto 0;
+    }
+    /*フッター*/
+    .page-footer{
+        background-image: url(../images/footer-l.png);
+        padding-top: 12rem;
+    }
+    .info th {
+        padding-left: 2.5rem;
+    }
+}
